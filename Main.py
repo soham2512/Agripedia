@@ -1,3 +1,4 @@
 from project import app
 
-app.run(port=3030, threaded=True)
+if __name__ == '__main__':
+    app.run(port=3953,debug=True)
