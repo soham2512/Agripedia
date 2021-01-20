@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>VIEW IMAGE I AGRI PEDIA </title>
+    <meta name="description"
+          content="A responsive bootstrap 4 admin dashboard template by hencework"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Data Table CSS -->
+    <link href="../../static/adminResources/css/jquery.dataTables.min.css"
+          rel="stylesheet" type="text/css"/>
+    <link href="../../static/adminResources/css/responsive.dataTables.min.css"
+          rel="stylesheet" type="text/css"/>
+
+    <!-- Toggles CSS -->
+    <link href="../../static/adminResources/css/toggles.css" rel="stylesheet"
+          type="text/css">
+    <link href="../../static/adminResources/css/toggles-light.css" rel="stylesheet"
+          type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet"
+          type="text/css">
+
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader-it">
+    <div class="loader-pendulums"></div>
+</div>
+<!-- /Preloader -->
+
+<!-- HK Wrapper -->
+<div class="hk-wrapper hk-vertical-nav">
+
+    <!-- Top Navbar -->
+    {% include 'user/header.html' %}
+    <!-- /Top Navbar -->
+
+    <!-- Vertical Nav -->
+    {% include 'user/menu.html' %}
+    <!-- /Vertical Nav -->
+
+    <!-- Setting Panel -->
+    {#
+    <div class="hk-settings-panel">
+        <div class="nicescroll-bar position-relative">
+            <div class="settings-panel-wrap">
+                <div class="settings-panel-head">
+                    <img class="brand-img d-inline-block align-top"
+                         src="adminResources/image/logo-light.png" alt="brand"/> <a
+                        href="javascript:void(0);" id="settings_panel_close"
+                        class="settings-panel-close"><span class="feather-icon"><i
+                        data-feather="x"></i></span></a>
+                </div>
+                <hr>
+                <h6 class="mb-5">Layout</h6>
+                <p class="font-14">Choose your preferred layout</p>
+                <div class="layout-img-wrap">
+                    <div class="row">
+                        <a href="javascript:void(0);" class="col-6 mb-30 active"> <img
+                                class="rounded opacity-70"
+                                src="../../static/adminResources/image/layout1.png" alt="layout"> <i
+                                class="zmdi zmdi-check"></i>
+                        </a> <a href="dashboard2.html" class="col-6 mb-30"> <img
+                            class="rounded opacity-70"
+                            src="../../static/adminResources/image/layout2.png" alt="layout"> <i
+                            class="zmdi zmdi-check"></i>
+                    </a> <a href="dashboard3.html" class="col-6 mb-30"> <img
+                            class="rounded opacity-70"
+                            src="../../static/adminResources/image/layout3.png" alt="layout"> <i
+                            class="zmdi zmdi-check"></i>
+                    </a> <a href="dashboard4.html" class="col-6 mb-30"> <img
+                            class="rounded opacity-70"
+                            src="../../static/adminResources/image/layout4.png" alt="layout"> <i
+                            class="zmdi zmdi-check"></i>
+                    </a> <a href="dashboard5.html" class="col-6"> <img
+                            class="rounded opacity-70"
+                            src="../../static/adminResources/image/layout5.png" alt="layout"> <i
+                            class="zmdi zmdi-check"></i>
+                    </a>
+                    </div>
+                </div>
+                <hr>
+                <h6 class="mb-5">Navigation</h6>
+                <p class="font-14">Menu comes in two modes: dark & light</p>
+                <div class="button-list hk-nav-select mb-10">
+                    <button type="button" id="nav_light_select"
+                            class="btn btn-outline-primary btn-sm btn-wth-icon icon-wthot-bg">
+                        <span class="icon-label"><i class="fa fa-sun-o"></i> </span><span
+                            class="btn-text">Light Mode</span>
+                    </button>
+                    <button type="button" id="nav_dark_select"
+                            class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg">
+                        <span class="icon-label"><i class="fa fa-moon-o"></i> </span><span
+                            class="btn-text">Dark Mode</span>
+                    </button>
+                </div>
+                <hr>
+                <h6 class="mb-5">Top Nav</h6>
+                <p class="font-14">Choose your liked color mode</p>
+                <div class="button-list hk-navbar-select mb-10">
+                    <button type="button" id="navtop_light_select"
+                            class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg">
+                        <span class="icon-label"><i class="fa fa-sun-o"></i> </span><span
+                            class="btn-text">Light Mode</span>
+                    </button>
+                    <button type="button" id="navtop_dark_select"
+                            class="btn btn-outline-primary btn-sm btn-wth-icon icon-wthot-bg">
+                        <span class="icon-label"><i class="fa fa-moon-o"></i> </span><span
+                            class="btn-text">Dark Mode</span>
+                    </button>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6>Scrollable Header</h6>
+                    <div
+                            class="toggle toggle-sm toggle-simple toggle-light toggle-bg-primary scroll-nav-switch"></div>
+                </div>
+                <button id="reset_settings"
+                        class="btn btn-primary btn-block btn-reset mt-30">Reset
+                </button>
+            </div>
+        </div>
+        <img class="d-none" src="../../static/adminResources/image/logo-light.png"
+             alt="brand"/> <img class="d-none"
+                                src="../../static/adminResources/image/logo-dark.png" alt="brand"/>
+    </div>
+#}
+    <!-- /Setting Panel -->
+
+    <!-- Main Content -->
+    <div class="hk-pg-wrapper">
+        <!-- Breadcrumb -->
+        {#
+        <nav class="hk-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-light bg-transparent">
+                <li class="breadcrumb-item"><a href="#">Tables</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data
+                    Table
+                </li>
+            </ol>
+        </nav>
+#}
+        <!-- /Breadcrumb -->
+
+        <!-- Container -->
+        <div class="container mt-xl-40  mt-lg-40  mt-sm-50  mt-md-30 mt-50">
+
+            <!-- Title -->
+            <div class="hk-pg-header">
+                <h4 class="hk-pg-title">
+						<span class="pg-title-icon"><span class="feather-icon"><i
+                                data-feather="database"></i></span></span>Your Detection Data
+                </h4>
+            </div>
+            <!-- /Title -->
+
+            <!-- Row -->
+            <div class="row">
+                <div class="col-xl-12">
+
+                    <section class="hk-sec-wrapper">
+                        <h5 class="hk-sec-title">Image Data Table</h5>
+
+                        <div class="row">
+                            <div class="col-sm">
+                                <div class="table-wrap">
+                                    <table id="datable_3" class="table table-hover w-100 display">
+                                        <thead>
+                                        <tr>
+
+                                            <th>Crop Type Name</th>
+                                            <th>Crop Name</th>
+                                            <th>Uploaded Image</th>
+                                            <th>Upload Date <br>& Time</th>
+                                            <th><h6>Detected disease</h6></th>
+                                            <th>Output Image</th>
+
+                                            <th>Prefered Medicine</th>
+
+                                            <th>Action</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {% for row in imageVOList %}
+                                            <tr>
+
+                                                <td>{{ row[2]['cropTypeName'] }}</td>
+
+                                                <td>{{ row[1]['cropName'] }}</td>
+
+                                                <td><a href="
+                                                        {{ row[0]['inputImagePath'] }}{{ row[0]['inputImageName'] }}"
+                                                       style="color: blue;" target="_blank">View Image</a>
+                                                </td>
+
+                                                <td>{{ row[0]['imageUploadDate'] }} <br>
+                                                    {{ row[0]['imageUploadTime'] }}
+                                                </td>
+
+                                                <td class="text-danger">{{ row[0]['cropDisease'] }}</td>
+
+
+                                                <td><a href="
+                                                        {{ row[0]['outputImagePath'] }}{{ row[0]['outputImageName'] }}"
+                                                       style="color: blue;" target="_blank">View Image</a>
+                                                </td>
+
+
+                                                <td>
+                                                    <a href="/user/viewDiseaseMedicine?cropDisease={{ row[0]['cropDisease'] }}"
+                                                       style="color: blue;">View Disease Medicine</a>
+                                                </td>
+
+
+                                                <td><a href="/user/deleteImage?imageID={{ row[0]['imageID'] }}"
+                                                       style="color: blue">Delete</a></td>
+
+
+
+
+                                            </tr>
+                                        {% endfor %}
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <!-- /Row -->
+
+        </div>
+        <!-- /Container -->
+
+        <!-- Footer -->
+        {% include 'user/footer.html' %}
+        <!-- /Footer -->
+
+    </div>
+    <!-- /Main Content -->
+
+</div>
+<!-- /HK Wrapper -->
+
+<!-- jQuery -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+
+<!-- Slimscroll JavaScript -->
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- Data Table JavaScript -->
+<script src="../../static/adminResources/js/jquery.dataTables.min.js"></script>
+<script src="../../static/adminResources/js/dataTables.bootstrap4.min.js"></script>
+<script src="../../static/adminResources/js/dataTables.dataTables.min.js"></script>
+<script src="../../static/adminResources/js/dataTables.buttons.min.js"></script>
+<script src="../../static/adminResources/js/buttons.bootstrap4.min.js"></script>
+<script src="../../static/adminResources/js/buttons.flash.min.js"></script>
+<script src="../../static/adminResources/js/jszip.min.js"></script>
+<script src="../../static/adminResources/js/pdfmake.min.js"></script>
+<script src="../../static/adminResources/js/vfs_fonts.js"></script>
+<script src="../../static/adminResources/js/buttons.html5.min.js"></script>
+<script src="../../static/adminResources/js/buttons.print.min.js"></script>
+<script src="../../static/adminResources/js/dataTables.responsive.min.js"></script>
+<script src="../../static/adminResources/js/dataTables-data.js"></script>
+
+<!-- FeatherIcons JavaScript -->
+<script src="../../static/adminResources/js/feather.min.js"></script>
+
+<!-- Fancy Dropdown JS -->
+<script src="../../static/adminResources/js/dropdown-bootstrap-extended.js"></script>
+
+<!-- Toggles JavaScript -->
+<script src="../../static/adminResources/js/toggles.min.js"></script>
+<script src="../../static/adminResources/js/toggle-data.js"></script>
+
+<!-- Init JavaScript -->
+<script src="../../static/adminResources/js/init.js"></script>
+
+</body>
+
+</html>

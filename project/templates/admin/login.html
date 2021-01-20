@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- 
+Template Name: Mintos - Responsive Bootstrap 4 Admin Dashboard Template
+Author: Hencework
+Contact: https://hencework.ticksy.com/
+
+License: You must have a valid license purchased only from templatemonster to legally use the template for your project.
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>LOGIN I AGRI PEDIA </title>
+    <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Toggles CSS -->
+    <link href="../../static/adminResources/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/toggles-light.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Preloader -->
+<div class="preloader-it">
+    <div class="loader-pendulums"></div>
+</div>
+<!-- /Preloader -->
+
+<!-- HK Wrapper -->
+<div class="hk-wrapper">
+
+    <!-- Main Content -->
+    <div class="hk-pg-wrapper hk-auth-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12 pa-0">
+                    <div class="auth-form-wrap pt-xl-0 pt-70">
+                        <div class="auth-form w-xl-30 w-lg-55 w-sm-75 w-100">
+                            <a class="auth-brand text-center d-block mb-20" href="/">
+                                <img class="brand-img" src="../../static/adminResources/image/logo1.JPG"
+                                     alt="brand"/>
+                            </a>
+                            <h2 class="display-4 mb-10 text-center">Login To Agri-Pedia</h2>
+                            <p class="mb-30 text-center">Access your account</p>
+                            <form action="/admin/validateLogin" method="post">
+                                {#<h1 class="display-4 text-center mb-10">Welcome Back :)</h1>#}
+                                {#<p class="text-center mb-30">Sign in to your account and enjoy unlimited perks.</p>#}
+                                <div class="form-group">
+                                    <p>Email-id / Username : *</p><input class="form-control" placeholder="Email" type="email" name="loginUsername">
+                                </div>
+                                <div class="form-group">
+                                    <p>Password : *</p>
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Password" type="password"
+                                               name="loginPassword">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text"></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {% if error %}
+                                    <p style="color: red" align="center">{{ error }}</p>
+                                {% endif %}
+                                <button class="btn btn-primary btn-block" type="submit">Login</button>
+                                <br>
+                            <div class="option-sep">or</div>
+                                <p class="text-center">Do have an account yet? <a href="/user/loadRegister">
+                                    Register Here !!
+                                </a></p>
+                            </form>
+                         <br>
+                            <ul>
+                            <li class="nav-item text-center">
+                                <h5>Translate this page</h5>
+
+                                <div id="google_translate_element"></div>
+                                <script type="text/javascript">
+                                    function googleTranslateElementInit() {
+                                        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                                    }
+                                </script>
+
+                                <script type="text/javascript"
+                                        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                            </li></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Main Content -->
+
+</div>
+<!-- /HK Wrapper -->
+
+<!-- JavaScript -->
+
+<!-- jQuery -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+
+<!-- Slimscroll JavaScript -->
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- Fancy Dropdown JS -->
+<script src="../../static/adminResources/js/dropdown-bootstrap-extended.js"></script>
+
+<!-- FeatherIcons JavaScript -->
+<script src="../../static/adminResources/js/feather.min.js"></script>
+
+<!-- Init JavaScript -->
+<script src="../../static/adminResources/js/init.js"></script>
+</body>
+</html>

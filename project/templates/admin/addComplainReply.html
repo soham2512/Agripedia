@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--
+Template Name: Mintos - Responsive Bootstrap 4 Admin Dashboard Template
+Author: Hencework
+Contact: https://hencework.ticksy.com/
+
+License: You must have a valid license purchased only from templatemonster to legally use the template for your project.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>ADD COMPLAIN REPLY I AGRI PEDIA </title>
+    <meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework"/>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Toggles CSS -->
+    <link href="../../static/adminResources/css/toggles.css" rel="stylesheet" type="text/css">
+    <link href="../../static/adminResources/css/toggles-light.css" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="../../static/adminResources/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- Preloader -->
+<div class="preloader-it">
+    <div class="loader-pendulums"></div>
+</div>
+<!-- /Preloader -->
+
+<!-- HK Wrapper -->
+<div class="hk-wrapper hk-vertical-nav">
+
+    <!-- Top Navbar -->
+    {% include 'admin/header.html' %}
+    <!-- /Top Navbar -->
+    <!-- Vertical Nav -->
+    {% include 'admin/menu.html' %}
+    <div id="hk_nav_backdrop" class="hk-nav-backdrop"></div>
+    <!-- /Vertical Nav -->
+    <!-- Setting Panel -->
+    {#<div class="hk-settings-panel">
+        <div class="nicescroll-bar position-relative">
+            <div class="settings-panel-wrap">
+                <div class="settings-panel-head">
+                    <img class="brand-img d-inline-block align-top"
+                         src="../../static/adminResources/image/logo-light.png" alt="brand"/>
+                    <a href="javascript:void(0);" id="settings_panel_close" class="settings-panel-close"><span
+                            class="feather-icon"><i data-feather="x"></i></span></a>
+                </div>
+                <hr>
+                <h6 class="mb-5">Layout</h6>
+                <p class="font-14">Choose your preferred layout</p>
+                <div class="layout-img-wrap">
+                    <div class="row">
+                        <a href="javascript:void(0);" class="col-6 mb-30 active">
+                            <img class="rounded opacity-70" src="../../static/adminResources/image/layout1.png"
+                                 alt="layout">
+                            <i class="zmdi zmdi-check"></i>
+                        </a>
+                        <a href="dashboard2.html" class="col-6 mb-30">
+                            <img class="rounded opacity-70" src="../../static/adminResources/image/layout2.png"
+                                 alt="layout">
+                            <i class="zmdi zmdi-check"></i>
+                        </a>
+                        <a href="dashboard3.html" class="col-6 mb-30">
+                            <img class="rounded opacity-70" src="../../static/adminResources/image/layout3.png"
+                                 alt="layout">
+                            <i class="zmdi zmdi-check"></i>
+                        </a>
+                        <a href="dashboard4.html" class="col-6 mb-30">
+                            <img class="rounded opacity-70" src="../../static/adminResources/image/layout4.png"
+                                 alt="layout">
+                            <i class="zmdi zmdi-check"></i>
+                        </a>
+                        <a href="dashboard5.html" class="col-6">
+                            <img class="rounded opacity-70" src="../../static/adminResources/image/layout5.png"
+                                 alt="layout">
+                            <i class="zmdi zmdi-check"></i>
+                        </a>
+                    </div>
+                </div>
+                <hr>
+                <h6 class="mb-5">Navigation</h6>
+                <p class="font-14">Menu comes in two modes: dark & light</p>
+                <div class="button-list hk-nav-select mb-10">
+                    <button type="button" id="nav_light_select"
+                            class="btn btn-outline-primary btn-sm btn-wth-icon icon-wthot-bg"><span
+                            class="icon-label"><i class="fa fa-sun-o"></i> </span><span
+                            class="btn-text">Light Mode</span></button>
+                    <button type="button" id="nav_dark_select"
+                            class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i
+                            class="fa fa-moon-o"></i> </span><span class="btn-text">Dark Mode</span></button>
+                </div>
+                <hr>
+                <h6 class="mb-5">Top Nav</h6>
+                <p class="font-14">Choose your liked color mode</p>
+                <div class="button-list hk-navbar-select mb-10">
+                    <button type="button" id="navtop_light_select"
+                            class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i
+                            class="fa fa-sun-o"></i> </span><span class="btn-text">Light Mode</span></button>
+                    <button type="button" id="navtop_dark_select"
+                            class="btn btn-outline-primary btn-sm btn-wth-icon icon-wthot-bg"><span
+                            class="icon-label"><i class="fa fa-moon-o"></i> </span><span
+                            class="btn-text">Dark Mode</span></button>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between align-items-center">
+                    <h6>Scrollable Header</h6>
+                    <div class="toggle toggle-sm toggle-simple toggle-light toggle-bg-primary scroll-nav-switch"></div>
+                </div>
+                <button id="reset_settings" class="btn btn-primary btn-block btn-reset mt-30">Reset</button>
+            </div>
+        </div>
+        <img class="d-none" src="../../static/adminResources/image/logo-light.png" alt="brand"/>
+        <img class="d-none" src="../../static/adminResources/image/logo-dark.png" alt="brand"/>
+    </div>#}
+    <!-- /Setting Panel -->
+
+    <!-- Main Content -->
+    <div class="hk-pg-wrapper">
+        <!-- Breadcrumb -->
+        {#<nav class="hk-breadcrumb" aria-label="breadcrumb">
+            <ol class="breadcrumb breadcrumb-light bg-transparent">
+                <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Add Reply-To-Complain</li>
+            </ol>
+        </nav>#}
+        <!-- /Breadcrumb -->
+
+        <!-- Container -->
+        <div class="container mt-xl-40  mt-lg-40  mt-sm-50  mt-md-30 mt-50">
+            <!-- Title -->
+            <div class="hk-pg-header">
+                <h4 class="hk-pg-title"><span class="pg-title-icon"><span class="feather-icon"><i
+                        data-feather="external-link"></i></span></span>Manage Complain Replies</h4>
+            </div>
+            <!-- /Title -->
+
+            <!-- Row -->
+            <div class="row">
+                <div class="col-xl-12">
+                    <section class="hk-sec-wrapper">
+                        <h5 class="hk-sec-title">Add Reply To Complain for User</h5>
+                        <div class="row">
+                            <div class="col-sm">
+                                <form class="needs-validation" novalidate>
+
+                                    {#<div class="form-row">
+                                        <div class="col-md-12 mb-10">
+                                            <label for="validationCustom03">Complain Description </label>
+                                            <textarea rows="3" cols="9" class="form-control" required></textarea>
+                                            <div class="invalid-feedback">
+                                                Please provide Complain subject Description.
+                                            </div>
+                                        </div>
+                                    </div>#}
+
+                                </form>
+                                <div class="row">
+                                    <div class="col-sm">
+                                        <form action="/admin/insertComplainReply" method="post"
+                                              class="needs-validation" novalidate
+                                      enctype="multipart/form-data">
+
+
+                                            <input type="hidden" value="{{ complainId }}" name="complainId">
+
+
+
+                                            <div class="form-row">
+                                                <div class="col-md-12 mb-10">
+                                                    <label for="validationCustom02">Reply Subject </label>
+                                                    <input type="text" class="form-control" id="validationCustom02"
+                                                           required name="replySubject">
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide Reply Subject.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-row">
+                                                <div class="col-md-12 mb-10">
+                                                    <label for="validationCustom03">Reply Message</label>
+                                                    <textarea rows="3" cols="9" class="form-control" required
+                                                              name='replyMessage'></textarea>
+                                                    <div class="valid-feedback">
+                                                        Looks good!
+                                                    </div>
+                                                    <div class="invalid-feedback">
+                                                        Please provide Reply Message.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="form-group">
+
+                                                <div class="fileinput fileinput-new input-group"
+                                                     data-provides="fileinput"><label for="validationCustom02">
+                                                    </label>
+                                                    <div class="input-group-prepend">
+                                                        <span class="input-group-text">Upload Support File</span>
+                                                    </div>
+                                                    <span class="input-group-append"> <span
+                                                            class=" btn btn-primary btn-file"><span
+                                                            class="fileinput-new">Select file</span><span
+                                                            class="fileinput-exists">Change</span> <input
+                                                            type="file" name="replyFile" id="replyFile"> </span>
+                                                        <a class="btn btn-secondary text-white fileinput-exists"
+                                                               data-dismiss="fileinput"> Remove File</a>
+															</span>
+                                                </div>
+
+                                            </div>
+                                            <button class="btn btn-primary" onclick="myFunction()" type="submit">Reply</button>
+                                        </form>
+
+                                        <script>
+                                            function myFunction() {
+                                                var x = document.getElementById("replyFile").required;
+
+                                            }
+                                        </script>
+
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+
+
+            </div>
+        </div>
+        <!-- /Row -->
+    </div>
+    <!-- /Container -->
+
+    <!-- Footer -->
+
+
+    {% include 'admin/footer.html' %}
+
+
+    <!-- /Footer -->
+
+</div>
+<!-- /Main Content -->
+
+
+<!-- jQuery -->
+<script src="../../static/adminResources/js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="../../static/adminResources/js/popper.min.js"></script>
+<script src="../../static/adminResources/js/bootstrap.min.js"></script>
+
+<!-- Jasny-bootstrap  JavaScript -->
+<script src="../../static/adminResources/js/jasny-bootstrap.min.js"></script>
+
+<!-- Slimscroll JavaScript -->
+<script src="../../static/adminResources/js/jquery.slimscroll.js"></script>
+
+<!-- Fancy Dropdown JS -->
+<script src="../../static/adminResources/js/dropdown-bootstrap-extended.js"></script>
+
+<!-- FeatherIcons JavaScript -->
+<script src="../../static/adminResources/js/feather.min.js"></script>
+
+<!-- Toggles JavaScript -->
+<script src="../../static/adminResources/js/toggles.min.js"></script>
+<script src="../../static/adminResources/js/toggle-data.js"></script>
+
+<!-- Init JavaScript -->
+<script src="../../static/adminResources/js/init.js"></script>
+<script src="../../static/adminResources/js/validation-data.js"></script>
+
+</body>
+
+</html>
